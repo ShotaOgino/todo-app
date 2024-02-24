@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
+// add this!
+import 'package:amplify_flutter/amplify.dart';
+import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
+import 'amplifyconfiguration.dart';
+final _amplify = Amplify;
 
+Future<void> _configureAmplify() async {
+  try {
+    await _amplify.addPlugins([AmplifyAuthCognito()]); 
+    await _amplify.configure(amplifyconfig);
+    debugPrint('Successfully configured Amplify 🎉');
+  } catch (e) {
+    debugPrint(e.toString());
+  }
+}
 void main() {
   runApp(const MyApp());
 }

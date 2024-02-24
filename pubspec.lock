@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.10"
+  amplify_auth_cognito:
+    dependency: "direct main"
+    description:
+      name: amplify_auth_cognito
+      sha256: "3e0b304cb88a72eac5016b316456b78ef149aa16a71c55d21bf01707a47dba94"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.10"
   amplify_auth_plugin_interface:
     dependency: transitive
     description:
@@ -306,4 +314,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.0 <4.0.0"
-  flutter: ">=1.17.0"
+  flutter: ">=1.20.0"
